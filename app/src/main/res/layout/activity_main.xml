@@ -1,11 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    >
 
-    <TextView android:text="Hello World!" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_vertical_marker"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:text="费用"
+            android:clickable="true"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_surrounding_arrow_down"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fl_contaier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="费用包含//n//r费用不包含jhajhdjsdhjjsfjdsdfjdshjzhjsdhjsdhdhasdghsdzhsgzhghdshsbchs"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/rl_22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_vertical_marker"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:text="时间"
+            android:clickable="true"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right_btn"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fl_contaier2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="费用"/>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="start"/>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="费用包含"/>
+
+    </LinearLayout>
+
+</LinearLayout>
